@@ -1,0 +1,115 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.navbar-toggler{
+  border: none !important;
+}
+.navbar-toggler:focus{
+  box-shadow: none !important;
+}
+.bannerback{
+  background: linear-gradient(168deg, #4C70F0  65%, white 65.4%);
+  }
+.themeColor{
+  color:#4C70F0
+}
+.footertext{
+  font-size: 13px;
+  color: grey !important;
+  cursor: pointer;
+}
+.card {
+  position: relative;
+  transition: background-color 1s ease;
+}
+
+.card:hover{
+  background-color: #4C70F0; /* Blue color */
+  color: #ffffff; /* White color for text */
+ 
+}
+.accordion-button::after {
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M8 0a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2H9v6a1 1 0 1 1-2 0V9H1a1 1 0 0 1 0-2h6V1a1 1 0 0 1 1-1z' clip-rule='evenodd'/%3e%3c/svg%3e");
+  transform: scale(.7) !important;
+}
+.accordion-button:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M0 8a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H1a1 1 0 0 1-1-1z' clip-rule='evenodd'/%3e%3c/svg%3e");
+}
+.accordion-item{
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+  border: none !important;
+}
+.accordion-button{
+  background-color: #F4F6FE !important;
+
+}
+
+.dialog_box {
+  position: relative;
+  /* padding: 8px; */
+  /* background: #f4f4f4; */
+  border: 1px solid #1178ed;
+}
+.dialog_box:after,
+.dialog_box:before {
+  border: solid transparent;
+  content: "";
+  height: 0;
+  width: 0;
+  position: absolute;
+}
+.dialog_box:after {
+  border-width: 15px; /* Increase the size of the arrow */
+}
+.dialog_box:before {
+  border-width: 17px; /* Increase the size of the arrow */
+} /* Arrow pointing BOTTOM */
+.dialog_box.bottom:after,
+.dialog_box.bottom:before {
+  left: 15%;
+  top: 100%;
+}
+.dialog_box.bottom:after {
+  border-color: #fff transparent transparent transparent;
+  margin-left: -14px;
+}
+.dialog_box.bottom:before {
+  border-color: #1178ed transparent transparent transparent;
+  margin-left: -16px;
+}
