@@ -57,7 +57,7 @@ function Banner() {
             />
             <div
               className="d-flex justify-content-center bg-white rounded-4 shadow-sm"
-              style={{ cursor: "pointer" ,marginLeft: "-40px" }}
+              style={{ cursor: "pointer"  }}
               data-aos="fade-down"
               data-aos-delay="200"
 
